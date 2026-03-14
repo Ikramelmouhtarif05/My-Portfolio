@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikram El-Mouhtarif | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">IKRAM</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Bonjour, je suis<br><span class="gradient-text">Ikram El-Mouhtarif</span></h1>
+                <p class="hero-desc">
+                    Étudiante en première année du cycle d'ingénieur en génie informatique 
+                    et en ingénierie des données à l'ENSA Khouribga. Rigoureuse et motivée.
+                </p>
+                <div class="hero-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Khouribga, Maroc</span>
+                    <span> <i class="fas fa-envelope"></i>
+                         <a href="mailto:elmouhtarifikram@gmail.com"> 
+                            elmouhtarifikram@gmail.com </a>
+                    </span> <span> <i class="fas fa-phone"></i> 
+                        <a href="tel:+212642168081"> 
+                            +212 642 168 081 </a>
+                     </span>
+                </div>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Me Contacter</a>
+                    <a href="https://linkedin.com/in/ikram-el-mouhtarif" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-card">
+                    <!-- 
+                        PHOTO DE PROFIL :
+                        Remplacez l'image ci-dessous par votre propre photo.
+                        Exemple : <img src="photo.jpg" alt="Ikram El-Mouhtarif">
+                        Placez votre photo dans le même dossier que ce fichier HTML.
+                    -->
+                    <img src="images/me.jpg" alt="Ikram El-Mouhtarif">
+                    <div class="img-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>ENSA Khouribga</strong>
+                            <small>Génie Informatique & Data</small>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARCOURS ===== -->
+    <section id="parcours" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-sub">Formations & Expériences</span>
+                <h2 class="section-title">Mon Parcours</h2>
+            </div>
+
+            <div class="parcours-grid">
+
+                <!-- FORMATIONS -->
+                <div class="timeline-col">
+                    <div class="col-header">
+                        <div class="col-icon blue">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formations Académiques</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot blue"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2025 — En cours</span>
+                                <h4>Cycle d'ingénieurie en Informatique et Ingénierie des Données</h4>
+                                <p class="timeline-school"><i class="fas fa-university"></i> ENSA Khouribga</p>
+                                <p class="timeline-desc">Formation approfondie en développement logiciel, bases de données, intelligence artificielle et traitement des données.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot blue"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2023 — 2025</span>
+                                <h4>Cycle préparatoire intégrée</h4>
+                                <p class="timeline-school"><i class="fas fa-university"></i> ENSA Khouribga</p>
+                                <p class="timeline-desc">Fondamentaux scientifiques en mathématiques, physique et sciences de l'ingénieur.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot blue"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2022 — 2023</span>
+                                <h4>Baccalauréat en sciences physiques</h4>
+                                <p class="timeline-school"><i class="fas fa-school"></i> Lycée Dakhla, Boujniba</p>
+                                <p class="timeline-desc">Obtenu avec <strong>Mention Très Bien</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPÉRIENCES -->
+                <div class="timeline-col">
+                    <div class="col-header">
+                        <div class="col-icon orange">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Expériences Professionnelles</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot orange"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">Juillet 2025</span>
+                                <h4>Stagiaire</h4>
+                                <p class="timeline-school"><i class="fas fa-building"></i> Groupe OCP</p>
+                                <p class="timeline-desc">Optimisation des paramètres de séchage industriel, analyse des performances et proposition d'améliorations pour renforcer la stabilité du système.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot orange"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2025</span>
+                                <h4>Logistique & Organisation</h4>
+                                <p class="timeline-school"><i class="fas fa-calendar-alt"></i> DATAVERSE 4.0</p>
+                                <p class="timeline-desc">Planification, coordination et gestion des activités de l'événement en collaboration avec l'équipe organisatrice.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot orange"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2023 — Présent</span>
+                                <h4>Cellule Média</h4>
+                                <p class="timeline-school"><i class="fas fa-users"></i> ENACTUS ENSA Khouribga</p>
+                                <p class="timeline-desc">Conception et gestion de contenus visuels et médiatiques. Design graphique, créativité et travail d'équipe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- ===== PROJETS ===== -->
+<section id="projets" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Projets Réalisés</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- ===== Projet 1 ===== -->
+            <div class="project-card">
+                <div class="project-top blue-gradient">
+                    <i class="fas fa-hospital"></i>
+                </div>
+
+                <div class="project-body">
+                    <h3>Gestion Médicale</h3>
+                    <p>
+                        Application web pour gérer les rendez-vous médicaux,
+                        les dossiers et ordonnances des élèves, tout en
+                        facilitant le suivi des consultations pour les médecins.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MERISE</span>
+                    </div>
+                </div>
+
+                <div class="project-footer">
+                    <span class="status">
+                        <span class="dot green"></span> Terminé
+                    </span>
+
+                    <a href="https://github.com/Ikramelmouhtarif05/Gestion_medical.git"
+                       target="_blank"
+                       class="github-link">
+                        <i class="fab fa-github"></i> Voir le code
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- ===== Projet 2 ===== -->
+            <div class="project-card">
+                <div class="project-top orange-gradient">
+                    <i class="fas fa-utensils"></i>
+                </div>
+
+                <div class="project-body">
+                    <h3>Gestion de Restaurant</h3>
+                    <p>
+                        Système de gestion intégré comprenant un tableau de bord
+                        administratif, la gestion des tables en temps réel,
+                        le contrôle du menu et le suivi des commandes clients.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-footer">
+                    <span class="status">
+                        <span class="dot green"></span> Terminé
+                    </span>
+
+                    <a href="https://github.com/Ikramelmouhtarif05/gestion_Palais_Elmouhtarif_restaurant.git"
+                       target="_blank"
+                       class="github-link">
+                        <i class="fab fa-github"></i> Voir le code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences & Qualités</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon blue"><i class="fas fa-code"></i></div>
+                    <h4>Programmation</h4>
+                    <div class="skill-tags">
+                        <span>C</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon purple"><i class="fas fa-database"></i></div>
+                    <h4>Bases de données</h4>
+                    <div class="skill-tags">
+                        <span>MySQL</span><span>MERISE</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon green"><i class="fas fa-tools"></i></div>
+                    <h4>Outils & Logiciels</h4>
+                    <div class="skill-tags">
+                        <span>GitHub</span><span>Photoshop</span><span>CATIA V5</span><span>MATLAB</span><span>Octave</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon teal"><i class="fas fa-language"></i></div>
+                    <h4>Langues</h4>
+                    <div class="skill-tags">
+                        <span>Arabe</span><span>Français</span><span>Anglais</span>
+                    </div>
+                </div>
+
+                <div class="skill-card highlight-card">
+                    <div class="skill-icon yellow"><i class="fas fa-star"></i></div>
+                    <h4>Qualités Personnelles</h4>
+                    <ul class="qualities">
+                        <li><i class="fas fa-check-circle"></i> Capacité d'adaptation</li>
+                        <li><i class="fas fa-check-circle"></i> Coopération et travail en équipe</li>
+                        <li><i class="fas fa-check-circle"></i> Capacité d'organisation</li>
+                        <li><i class="fas fa-check-circle"></i> Rigueur et motivation</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-sub">Apprentissage Continu</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="certs-grid">
+
+    
+
+            <!-- Certificat 1 -->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/Git & github certif_page-0001.jpg" alt="Certificat Git et GitHub">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Git et GitHub</h4>
+                    <p><i class="fas fa-building"></i> 365 Data Science</p>
+                </div>
+            </div>
+
+            <!-- Certificat 2 -->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/SQL.jpg" alt="Certificat SQL">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Langage SQL</h4>
+                    <p><i class="fas fa-building"></i> 365 Data Science</p>
+                </div>
+            </div>
+
+            <!-- certificat 3 -->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/Intro to AI.jpg" alt="Intro to AI">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Intro to Artificial Intelligence</h4>
+                    <p><i class="fas fa-building"></i> 365 Data Science</p>
+                </div>
+            </div>
+            <!-- Certificat 4 -->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/Ikram El-Mouhtarif_researchexclub.jpg" alt="Gestion de projet et GitHub">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Gestion de projet & Git/GitHub</h4>
+                    <p><i class="fas fa-building"></i> ResearchXClub</p>
+                </div>
+            </div>
+            
+
+            <!-- Certificat 5 -->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/Science et analyse des donnees.jpeg" alt="Science et analyse des données">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Science et Analyse des Données</h4>
+                    <p><i class="fas fa-building"></i> HP LIFE</p>
+                </div>
+            </div>
+
+            <!-- Certificat  6-->
+            <div class="cert-card">
+                <div class="cert-img">
+                    <img src="images/Attestation Ikram.EL-MOUHTARIF.jpg" alt="Certificat Adobe Photoshop">
+                    <div class="cert-overlay"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="cert-info">
+                    <h4>Certificat en Adobe Photoshop</h4>
+                    <p><i class="fas fa-building"></i> ENACTUS ENSA Khouribga</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-sub light">Restons en Touch</span>
+            <h2 class="section-title light">Contactez-moi</h2>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Prête à discuter ?</h3>
+                <p>Que ce soit pour une opportunité de stage, une question sur mes projets ou simplement pour échanger, n'hésitez pas à m'écrire.</p>
+
+                <div class="info-items">
+                    <a href="mailto:elmouhtarifikram@gmail.com" class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <span>elmouhtarifikram@gmail.com</span>
+                    </a>
+                    <a href="tel:+212642168081" class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <span>+212 642 168 081</span>
+                    </a>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <span>Khouribga, Maroc</span>
+                    </div>
+                    <a href="https://linkedin.com/in/ikram-el-mouhtarif" target="_blank" class="info-item">
+                        <div class="info-icon"><i class="fab fa-linkedin"></i></div>
+                        <span>linkedin.com/in/ikram-el-mouhtarif</span>
+                    </a>
+                </div>
+
+                <div class="availability-box">
+                    <strong>Disponibilité</strong>
+                    <span class="avail-badge">Recherche de stage – Juillet 2025</span>
+                </div>
+            </div>
+
+            <!-- ===== FORMULAIRE EMAILJS ===== -->
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" name="name" id="name" placeholder="Ex : Ahmed Benali" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="ahmed@exemple.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" name="sujet" id="sujet" placeholder="Proposition de stage...">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Bonjour Ikram, je vous contacte pour..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+                <p id="form-success" class="form-success" style="display:none">
+                    <i class="fas fa-check-circle"></i> Message envoyé avec succès !
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">IKRAM</div>
+            <p>Étudiante Ingénieure en Informatique & Data · ENSA Khouribga</p>
+            <div class="footer-links">
+                <a href="mailto:elmouhtarifikram@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/ikram-el-mouhtarif" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ikramelmouhtarif05" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Ikram El-Mouhtarif. </p>
+    </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+   // Initialise EmailJS avec ton User ID
+   (function(){
+       emailjs.init("0qQQl_LE2Qgnpsxbx");
+   })();
+
+   // Écoute de l'événement submit
+   document.getElementById('contact-form').addEventListener('submit', function(event){
+       event.preventDefault();
+
+       emailjs.sendForm('service_jq8z5z6', 'template_ylt50z6', this)
+       .then(function() {
+           document.getElementById('form-success').style.display = 'block';
+           document.getElementById('contact-form').reset();
+           setTimeout(() => {
+               document.getElementById('form-success').style.display = 'none';
+           }, 4000);
+       }, function(error) {
+           alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
+       });
+   });
+</script>
+</body>
+</html>
